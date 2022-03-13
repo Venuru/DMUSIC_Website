@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="home_style.css">
+    <script src="home_script.js"></script>
     <title>DMUSIC Website</title>
 </head>
 <body>
     <!-- Home Section -->
     <section class="home">
-        <div class="music_band"></div>
+        <div class="music-band"></div>
         <header>
             <nav>
-                <img src="images/logo.png" class="logo">
+                <img src="images/home_section/logo.png" class="logo">
                 <ul class="navigation">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">PIANO LESSONS</a></li>
@@ -36,5 +38,49 @@
             </div>
         </div>
     </section>    
+    <!-- Piano Lessons Section -->
+    <section>
+        <div class="piano-lessons-section">
+            <div class="content">
+                <h2>Piano Lessons</h2>
+                <p>Duis feugiat congue metus, ultrices vulputate nibh viverra<br> 
+                    vulputate nibh viverra eget. Vestibulum </p>
+            </div>
+            <!-- Piano Lessons Section Image Slider -->
+            <div class="imageBox">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/piano_lesson_section/box_guitar.png" /></div>
+                        <div class="swiper-slide"><img src="images/piano_lesson_section/piano_player.png" /></div>
+                        <div class="swiper-slide"><img src="images/piano_lesson_section/electric_guitar_player.png" /></div>
+                        <div class="swiper-slide"><img src="images/piano_lesson_section/violin_player.png" /></div>
+                        <div class="swiper-slide"><img src="images/piano_lesson_section/base_guitar_player.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    effect: "coverflow",
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: "auto",
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                    loop: true
+                });
+            </script>
+        </div>
+    </section>
 </body>
 </html>

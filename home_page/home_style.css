@@ -6,53 +6,52 @@
 }
 
 /* Home Section */
-.home{
+.home {
     min-height: 100vh;
     width: 100%;
     background-color: #ffffff;
-    background-image: url("images/background_image.png");
+    background-image: url("images/home_section/background_image.png");
     background-position: 100%;
     background-position-y: 0%;
     background-repeat: no-repeat;
     background-size: 65%;
-    color: #fff;
     padding: 0 2%;
 }
 
 /* Music Band Image */
-.music_band {
+.music-band {
     position: absolute;
     top: 17%;
     right: 12%;
     width: 100%;
     height: 80%;
-    background-image: url("images/music_band.png");
+    background-image: url("images/home_section/music_band.png");
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: 40%;
 }
 
 /*Header Section */
-header nav{
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
-header nav .logo{
+header nav .logo {
     width: 100px;
 }
-header nav .navigation li{
+header nav .navigation li {
    display: inline; 
    list-style: none;
    margin-left: 35px;
 }
-header nav .navigation li a{
+header nav .navigation li a {
     color: #fff;
     text-decoration: none;
     font-size: 12px;
 }
-header nav .navigation li a .contactUs{
+header nav .navigation li a .contactUs {
     padding: 8px 20px;
     border-radius: 40px;
     border-color: #fff;
@@ -67,24 +66,65 @@ header nav .navigation li a .contactUs{
     align-items: center;
     top: 120px;
 }
-.content .textBox{
+.content .textBox {
     position: relative;
     max-width: 600px;
     top: 15px;
     left: 60px;
 }
-.content .textBox h3{
+.content .textBox h3 {
     color: #292929;
     font-size: 60px;
     font-weight: 10;
 }
-.content .textBox h2{
+.content .textBox h2 {
     color: black;
     font-size: 70px;
     font-weight: 800;
     margin-bottom: 15px;
 }
-.content .textBox p{
+.content .textBox p {
     font-size: 20px;
     color: #7A7A7A;
+}
+
+/* Piano Lessons Section */
+.piano-lessons-section {
+    min-height: 90vh;
+    width: 100%;
+    background-color: rgba(180, 180, 180, 0.15);
+}
+
+/* Piano Lessons Section Content Section */
+.piano-lessons-section .content {
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+}
+.piano-lessons-section .content h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+.piano-lessons-section .content p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 10;
+}
+
+/* Piano Lessons Section Image Slider */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 430px;
+    border-radius: 10px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
 }
