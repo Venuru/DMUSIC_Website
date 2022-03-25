@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 /* Home Section */
@@ -128,3 +127,71 @@ header nav .navigation li a .contactUs {
     display: block;
     width: 100%;
 }
+
+/* Maestra Section*/
+.maestra-section {
+    width: 100%;
+    height: 100vh;
+    background-image: 
+        url("images/maestra_section/guitar_play_with_dog.png"), 
+        url("images/maestra_section/guitar_play_on_cup.png");
+    background-repeat: no-repeat;
+    background-size: 
+        36%,
+        38%;
+    background-position-x: 
+        left, 
+        right;
+    background-position-y: 
+        center, 
+        bottom;
+}
+
+/* Maestra Section Content Section */
+.maestra-section .content {
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+}
+.maestra-section .content h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+.maestra-section .content p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 10;
+}
+
+/* Maestra Section Teacher Card */
+.maestra-section .teacher-card {
+    width: 400px;
+    height: 520px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding: 50px 25px;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.maestra-section .teacher-card .teacher-img {
+    width: 160px;
+}
+.maestra-section .teacher-card h4 {
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+.maestra-section .teacher-card h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.maestra-section .teacher-card p{
+    font-size: 21px;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 25px;
+}
+
