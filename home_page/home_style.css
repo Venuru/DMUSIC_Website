@@ -27,7 +27,7 @@
     background-image: url("images/home_section/music_band.png");
     background-repeat: no-repeat;
     background-position: 100%;
-    background-size: 40%;
+    background-size: 45%;
 }
 
 /*Header Section */
@@ -145,6 +145,7 @@ header nav .navigation li a .contactUs {
     background-position-y: 
         center, 
         bottom;
+    margin-bottom: 60px;
 }
 
 /* Maestra Section Content Section */
@@ -195,3 +196,131 @@ header nav .navigation li a .contactUs {
     padding-top: 25px;
 }
 
+
+/* Lessons Section*/
+.lessons-section {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(180, 180, 180, 0.15);
+    background-image: url("images/lessons_section/saxophone_play_on_trunk.png");
+    background-repeat: no-repeat;
+    background-size: 31%;
+    background-position-y: 100%;
+}
+
+/* Lessons Section Content Section */
+.lessons-section .content {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+.lessons-section .content h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+.lessons-section .content p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 10;
+}
+
+/* Lessons Section Courses Section */
+.course-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.course-box li {
+    list-style: none;
+    margin-left: 20px;
+}
+.course-box .course {
+    width: 310px;
+    height: 425px;
+    background: rgba(255, 255, 255);
+    border: 1px solid rgb(112, 112, 112);
+    padding: 30px 15px 0 15px;
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-left: 50px;
+}
+.course-box .course .header-section {
+    display: inline-flex; 
+}
+.course-box .course .header-section img {
+    width: 65px;
+    height: 65px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.course-box .course .header-section .course-name{
+    font-size: 40px;
+    font-weight: 600;
+}
+.course-box .course .header-section .coures-details {
+    font-size: 15px;
+}
+.course-box .course .horizontal_line{
+    margin: auto;
+    width: 90%;
+    height: 1px;
+    background: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.course-box .course .course-details .space-box {
+    margin-top: 20px;
+}
+.course-box .course .course-details .course-description {
+    font-size: 15px;
+    font-weight: 800;
+}
+.course-box .course .btn{
+    margin-top: 30px;
+    margin-left: 5%;
+    height: 55px;
+    width: 250px;
+    border-radius: 15px;
+    border: none;
+    background-image: linear-gradient(180deg, #3B28E5, #26E1FF);
+    outline: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Lessons Section Piano Courses Section */
+.course-box .piano-course {
+    width: 340px;
+    height: 460px;
+    background-image: linear-gradient(180deg, #3B28E5, #26E1FF);
+}
+.course-box .piano-course .header-section img {
+    width: 75px;
+    height: 75px;
+}
+.course-box .piano-course .header-section .course-name{
+    font-size: 50px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.course-box .piano-course .header-section .coures-details {
+    font-size: 17px;
+    color: #FFFFFF;
+}
+.course-box .course .horizontal_line{
+    height: 0.1px;
+}
+.course-box .piano-course .course-details .course-description {
+    font-size: 17px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.course-box .piano-course  .btn{
+    height: 60px;
+    width: 270px;
+    border-radius: 15px;
+    background-image: linear-gradient(#F4864D, #F4864D);
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+}

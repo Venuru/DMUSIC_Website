@@ -39,71 +39,157 @@
         </div>
     </section>    
     <!-- Piano Lessons Section -->
-    <section>
-        <div class="piano-lessons-section">
-            <div class="content">
-                <h2>Piano Lessons</h2>
-                <p>Duis feugiat congue metus, ultrices vulputate nibh viverra<br> 
-                    vulputate nibh viverra eget. Vestibulum 
-                </p>
-            </div>
-            <!-- Piano Lessons Section Image Slider -->
-            <div class="imageBox">
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/piano_lesson_section/box_guitar.png" /></div>
-                        <div class="swiper-slide"><img src="images/piano_lesson_section/piano_player.png" /></div>
-                        <div class="swiper-slide"><img src="images/piano_lesson_section/electric_guitar_player.png" /></div>
-                        <div class="swiper-slide"><img src="images/piano_lesson_section/violin_player.png" /></div>
-                        <div class="swiper-slide"><img src="images/piano_lesson_section/base_guitar_player.png" /></div>
-                    </div>
+    <section class="piano-lessons-section">
+        <div class="content">
+            <h2>Piano Lessons</h2>
+            <p>Duis feugiat congue metus, ultrices vulputate nibh viverra<br> 
+                vulputate nibh viverra eget. Vestibulum 
+            </p>
+        </div>
+        <!-- Piano Lessons Section Image Slider -->
+        <div class="imageBox">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/piano_lesson_section/box_guitar.png" /></div>
+                    <div class="swiper-slide"><img src="images/piano_lesson_section/piano_player.png" /></div>
+                    <div class="swiper-slide"><img src="images/piano_lesson_section/electric_guitar_player.png" /></div>
+                    <div class="swiper-slide"><img src="images/piano_lesson_section/violin_player.png" /></div>
+                    <div class="swiper-slide"><img src="images/piano_lesson_section/base_guitar_player.png" /></div>
                 </div>
             </div>
-            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                    effect: "coverflow",
-                    grabCursor: true,
-                    centeredSlides: true,
-                    slidesPerView: "auto",
-                    coverflowEffect: {
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true,
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                    },
-                    loop: true
-                });
-            </script>
         </div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                loop: true
+            });
+        </script>
     </section>
     <!-- Maestra Section -->
     <section class="maestra-section">
-            <div class="content">
-                <h2>Maestra</h2>
-                <p>Duis feugiat congue metus, ultrices vulputate nibh viverra<br> 
-                vulputate nibh viverra eget. Vestibulum 
-                </p>
-            </div>
-            <div class="teacher-card" data-tilt>
-                <img src="images/maestra_section/pianist.png" alt="" class="teacher-img">
-                <h4>Pianist</h4>
-                <h2>Emma Alexandra</h2>
-                <p>Duis feugiat congue metus, vulputate<br>
-                    nibh viverra eget. ullamcorper<br>
-                    volutpat feugiat congue metus,<br> 
-                    ultrices vulputate nibh . Vestibulum<br>
-                    volutpat feugiat congue metus,<br>  
-                    ever varius.</p>
-            </div>
-            <div class="guitar-and-cup"></div>
+        <div class="content">
+            <h2>Maestra</h2>
+            <p>Duis feugiat congue metus, ultrices vulputate nibh viverra<br> 
+            vulputate nibh viverra eget. Vestibulum 
+            </p>
+        </div>
+        <!-- Maestra Section Teacher Section -->
+        <div class="teacher-card" data-tilt>
+            <img src="images/maestra_section/pianist.png" alt="" class="teacher-img">
+            <h4>Pianist</h4>
+            <h2>Emma Alexandra</h2>
+            <p>Duis feugiat congue metus, vulputate<br>
+                nibh viverra eget. ullamcorper<br>
+                volutpat feugiat congue metus,<br> 
+                ultrices vulputate nibh . Vestibulum<br>
+                volutpat feugiat congue metus,<br>  
+                ever varius.</p>
+        </div>
+        <div class="guitar-and-cup"></div>
         <script src="vanilla-tilt.js"></script>
+    </section>
+    <!-- Lessons Section -->
+    <section class="lessons-section">
+        <div class="content">
+            <h2>Lessons</h2>
+            <p>Duis feugiat congue metus, ultrices vulputate nibh viverra<br> 
+                vulputate nibh viverra eget Vestibulum 
+            </p>
+        </div>
+        <!-- Lessons Section Course Section -->
+        <div class="course-box" style="font-size: 20px;">
+            <div class="course guitar-course">
+                <div class="header-section">
+                    <img src="images/lessons_section/tree_img.png" alt="">
+                    <li>
+                        <div class="course-name">Guitar</div>
+                        <div class="coures-details">Sigsles weo sae dere wseh<br> dtigag
+                                                    & rcddy ti fied thsrr partder
+                        </div>
+                    </li> 
+                </div>
+                <div class="horizontal_line"></div>
+                <div class="course-details">
+                    <li>
+                        <span class="course-description">• Sigsles wer ase dere wlth dasrtg &<br>
+                             recry tilud ttrir psrtner</span>
+                    </li>
+                    <div class="space-box"></div>
+                    <li>
+                        <span class="course-description">• Sigsles wer ase dere wlth dasrtg &<br>
+                             recry tilud ttrir psrtner</span>
+                    </li>
+                </div>
+                <button class="btn">Read More</button>
+            </div>
+
+            <div class="course piano-course">
+                <div class="header-section">
+                    <img src="images/lessons_section/rocket_img.png" alt="">
+                    <li>
+                        <div class="course-name">Piano</div>
+                        <div class="coures-details">Sigsles weo sae dere wseh<br> dtigag
+                                                    & rcddy ti fied thsrr partder
+                        </div>
+                    </li> 
+                </div>
+                <div class="horizontal_line"></div>
+                <div class="course-details">
+                    <li>
+                        <span class="course-description">• Sigsles wer ase dere wlth dasrtg &<br>
+                             recry tilud ttrir psrtner</span>
+                    </li>
+                    <div class="space-box"></div>
+                    <li>
+                        <span class="course-description">• Sigsles wer ase dere wlth dasrtg &<br>
+                             recry tilud ttrir psrtner</span>
+                    </li>
+                </div>
+                <button class="btn">Read More</button>
+            </div>
+
+            <div class="course violin-course">
+                <div class="header-section">
+                    <img src="images/lessons_section/fire_img.png" alt="">
+                    <li>
+                        <div class="course-name">Violin</div>
+                        <div class="coures-details">Sigsles weo sae dere wseh<br> dtigag
+                                                    & rcddy ti fied thsrr partder
+                        </div>
+                    </li> 
+                </div>
+                <div class="horizontal_line"></div>
+                <div class="course-details">
+                    <li>
+                        <span class="course-description">• Sigsles wer ase dere wlth dasrtg &<br>
+                             recry tilud ttrir psrtner</span>
+                    </li>
+                    <div class="space-box"></div>
+                    <li>
+                        <span class="course-description">• Sigsles wer ase dere wlth dasrtg &<br>
+                             recry tilud ttrir psrtner</span>
+                    </li>
+                </div>
+                <button class="btn">Read More</button>
+            </div>
+                
+        </div>
     </section>
 </body>
 </html>
