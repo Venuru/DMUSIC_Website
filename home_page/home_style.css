@@ -111,19 +111,19 @@ header nav .navigation li a .contactUs {
 }
 
 /* Piano Lessons Section Image Slider */
-.swiper {
+.piano-lessons-section .swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
   }
-.swiper-slide {
+.piano-lessons-section .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 430px;
     border-radius: 10px;
 }
-.swiper-slide img {
+.piano-lessons-section .swiper-slide img {
     display: block;
     width: 100%;
 }
@@ -349,6 +349,7 @@ header nav .navigation li a .contactUs {
     font-weight: 10;
 }
 
+/* Spotlight Section Video Section*/
 .spotlight-section .videos-section {
     height: 800px;
     width: 100%;
@@ -385,4 +386,81 @@ header nav .navigation li a .contactUs {
 .spotlight-section .videos-section .videos .active {    
     transform: scale(1.06);
     border: 2px solid greenyellow;
+}
+
+/* Testimonal Section */
+.testimonial-section {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 10px;
+    background-image: 
+        url(images/testimonial_section/background_image/top-left-cloud.png),
+        url(images/testimonial_section/background_image/top-right-cloud.png),
+        url(images/testimonial_section/background_image/bottom-left-cloud.png),
+        url(images/testimonial_section/background_image/bottom-right-cloud.png);
+    background-repeat: no-repeat;
+    background-position-x: 
+        left,
+        right,
+        left,
+        right;
+    background-position-y: 
+        top,
+        top,
+        bottom,
+        bottom;   
+    background-size: 
+        25%,
+        30%,
+        25%,
+        25%;     
+}
+.testimonial-section .content {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+.testimonial-section .content h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+.testimonial-section .content p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 10;
+}
+
+/* Testimonal Section Tstimonals Slider */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+.testimonial-section .testimonal-box .swiper-slide {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    
+}
+.testimonial-section .testimonal-box .contentBox {
+    width: 600px;
+    height: 300px;
+    background: rgba(255, 255, 255);
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 15px;
+    padding: 25px;
+}
+.testimonial-section .testimonal-box .contentBox .content {
+    margin-bottom: 20px;
+}
+.testimonial-section .testimonal-box .contentBox .author-details {
+    display: flex;
+}
+.testimonial-section .testimonal-box .contentBox .author-details .author_img img {
+    width: 80px;
+    margin-right: 20px;
+}
+.testimonial-section .testimonal-box .contentBox .author-details .author-name {
+    margin-top: auto;
+    margin-bottom: auto;
 }
