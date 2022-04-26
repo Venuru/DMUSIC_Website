@@ -9,7 +9,7 @@
     min-height: 100vh;
     width: 100%;
     background-color: #ffffff;
-    background-image: url("images/home_section/background_image.png");
+    background-image: url("images/home_section/pc_background_image.png");
     background-position: 100%;
     background-position-y: 0%;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
     background-size: 45%;
 }
 
-/*Header Section */
+/* Header Section */
 header nav {
     display: flex;
     align-items: center;
@@ -65,24 +65,24 @@ header nav .navigation li a .contactUs {
     align-items: center;
     top: 120px;
 }
-.content .textBox {
+.home .content .textBox {
     position: relative;
     max-width: 600px;
     top: 15px;
     left: 60px;
 }
-.content .textBox h3 {
+.home .content .textBox h3 {
     color: #292929;
     font-size: 60px;
     font-weight: 10;
 }
-.content .textBox h2 {
+.home .content .textBox h2 {
     color: black;
     font-size: 70px;
     font-weight: 800;
     margin-bottom: 15px;
 }
-.content .textBox p {
+.home .content .textBox p {
     font-size: 20px;
     color: #7A7A7A;
 }
@@ -229,6 +229,7 @@ header nav .navigation li a .contactUs {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .course-box li {
     list-style: none;
@@ -239,7 +240,7 @@ header nav .navigation li a .contactUs {
     height: 425px;
     background: rgba(255, 255, 255);
     border: 1px solid rgb(112, 112, 112);
-    padding: 30px 15px 0 15px;
+    padding: 30px 25px 0 15px;
     border-radius: 15px;
     margin-top: 55px;
     margin-left: 50px;

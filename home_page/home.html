@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="tablet_media_query.css">
     <script src="home_script.js"></script>
     <title>DMUSIC Website</title>
 </head>
@@ -14,9 +15,11 @@
     <!-- Home Section -->
     <section class="home">
         <div class="music-band"></div>
+        <!-- Header Section -->
         <header>
             <nav>
                 <img src="images/home_section/logo.png" class="logo">
+                <div class="toggle" onclick="toggleMenu()"></div>
                 <ul class="navigation">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">PIANO LESSONS</a></li>
@@ -38,6 +41,14 @@
                     arcu congue viverra.Vestibulum varius pharetra </p>
             </div>
         </div>
+        <script>
+           function  toggleMenu() {
+               const menuToggle = document.querySelector('.toggle');
+               const navigation = document.querySelector('.navigation')
+               menuToggle.classList.toggle('active')
+               navigation.classList.toggle('active')
+           }
+        </script>
     </section>    
     <!-- Piano Lessons Section -->
     <section class="piano-lessons-section">

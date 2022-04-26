@@ -1,0 +1,162 @@
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    /* Home Section */
+    .home {
+        min-height: 75vh;
+        background-size: 82%;
+        background-image: url("images/home_section/tablet_background_image.png");
+    }
+    /* Music Band Image */
+    .music-band {
+        top: 8%;
+        right: 2%;
+        background-size: 50%;
+    }
+    /* Home Page Content Section */
+    .home .content {
+        width: 60%;
+        top: 75px;
+    }
+    .home .content .textBox {
+        left: 20px;
+    }
+    .home .content .textBox h3 {
+        font-size: 50px;
+    }
+    .home .content .textBox h2 {
+        font-size: 60px;
+    }
+    .home .content .textBox p {
+        font-size: 16px;
+    }
+    /* Header Section */
+    header nav .navigation {
+        display: none;
+    }
+    header nav .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-image: url("images/home_section/menu.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+    header nav .toggle.active {
+        background-image: url("images/home_section/close_menu.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: fixed;
+        right: 40px;
+    }
+    header nav .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #3B28E5, #26E1FF);
+        display: flex;flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    header nav .navigation li {
+        display: inline;
+        list-style: none;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    header nav .navigation li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .lessons-section {
+        background-size: 44%;
+    }
+
+    /* Lessons Section Piano Courses Section */
+    .course-box .piano-course {
+        width: 310px;
+        height: 425px;
+        background: rgba(255, 255, 255);
+    }
+    .course-box .piano-course .header-section img {
+        width: 65px;
+        height: 65px;
+    }
+    .course-box .piano-course .header-section .course-name{
+        font-size: 40px;
+        font-weight: 600;
+        color: #000000;
+    }
+    .course-box .piano-course .header-section .coures-details {
+        font-size: 17px;
+        color: #000000;
+    }
+    .course-box .course .horizontal_line{
+        height: 1px;
+        background: black;
+    }
+    .course-box .piano-course .course-details .course-description {
+        font-size: 15px;
+        font-weight: 800;
+        color: #000000;
+    }
+    .course-box .piano-course  .btn{
+        height: 55px;
+        width: 250px;
+        border-radius: 15px;
+        background-image: linear-gradient(180deg, #3B28E5, #26E1FF);
+        font-size: 13px;
+        font-weight: 600;
+        color: #000000;
+    }
+    .course-box .violin-course {
+        margin-bottom: 50px;
+    }
+
+    /* Spotlight Section Video Section*/
+    .spotlight-section .videos-section {
+        background-image: 
+            url(images/spotlight_section/tablet_women_sing_on_trunk.png),
+            url(images/spotlight_section/tablet_guitar_play_on_trunk.png);
+        background-size: 35%;
+    }
+    .spotlight-section .videos-section .main-video video {
+        width: 70%;
+    }
+    .spotlight-section .videos-section .videos video {
+        width: 260px;
+    }
+    /* Footer Section */
+    .footer-section .guitarist-img {
+        background-size: 60%;
+        background-position-y: 400px;
+        background-position-x: 40%;
+    }
+    .footer-section .footer-link .row .footer-col {
+        width: 25%;
+        padding: 0 90px;
+    }
+    .footer-section .footer-link {
+        height: 200px;
+        margin-top: 65%;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    
+    .home .content .textBox h3 {
+        color: #292929;
+        font-size: 60px;
+        font-weight: 10;
+    }
+  }
