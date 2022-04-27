@@ -1,0 +1,110 @@
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    
+    /* Home Section */
+    .home {
+        min-height: 92vh;
+        background-image: url("images/home_section/mobile_background_image.png");
+        background-size: 70%;
+    }
+
+    /* Music Band Image */
+    .music-band {
+        top: 30%;
+        background-image: url("images/home_section/music_band.png");
+        background-position: 50%;
+        background-size: 85%;
+    }
+
+    /* Header Section */
+    header nav .logo {
+        width: 80px;
+    }
+
+    /* Home Page Content Section */
+    .home .content {
+        width: 100%;
+        top: 40px;
+    }
+    .home .content .textBox {
+        top: 10px;
+        left: 20px;
+    }
+    .home .content .textBox h3 {
+        font-size: 57px;
+    }
+    .home .content .textBox h2 {
+        font-size: 60px;
+    }
+    .home .content .textBox p {
+        font-size: 17px;
+    }
+
+    /* Piano Lessons Section */
+    .piano-lessons-section {
+        min-height: 75vh;
+        width: 100%;
+        background-color: rgba(180, 180, 180, 0.15);
+    }
+    /* Piano Lessons Section Content Section */
+    .piano-lessons-section .content {
+        padding: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .piano-lessons-section .content p {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    /* Piano Lessons Section Image Slider */
+    .piano-lessons-section .swiper {
+        padding-top: 10px;
+    }
+
+    /* Maestra Section*/
+    .maestra-section {
+        min-height: 75vh;
+        background-repeat: no-repeat;
+        background-size: 
+            65%,
+            55%;
+        background-position-y: 
+            150px, 
+            450px;
+    }
+    /* Maestra Section Content Section */
+     .maestra-section .content {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .maestra-section .content p {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    /* Maestra Section Teacher Card */
+    .maestra-section .teacher-card {
+        width: 360px;
+    }
+
+    /* Lessons Section*/
+    .lessons-section {
+        background-image: none;
+    }
+    /* Lessons Section Content Section */
+    .lessons-section .content {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .lessons-section .content p {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 10;
+    }
+
+    /* Lessons Section Courses Section */
+    .course-box .course {
+        margin-left: 0;
+    }
+}
