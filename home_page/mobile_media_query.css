@@ -107,4 +107,73 @@
     .course-box .course {
         margin-left: 0;
     }
+
+    /* Spotlight Section*/
+    .spotlight-section .content {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .spotlight-section .content p {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    /* Spotlight Section Main Video */
+    .spotlight-section .videos-section .main-video video {
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+    }
+
+    /* Testimonal Section Content Section */
+    .testimonial-section .content {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .testimonial-section .content p {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 10;
+    }
+
+    /* Testimonal Section Testimonals Box */
+    .testimonial-section .testimonal-box .contentBox {
+        width: 300px;
+        height: 300px;
+        background: rgba(255, 255, 255);
+        border: 1px solid rgb(112, 112, 112);
+        border-radius: 15px;
+        padding-top: 5px;
+    }  
+
+    /* Footer Section */
+    .footer-section {
+        min-height: 100vh;
+        height: 50px;
+        width: 100%;
+        background-image: none;
+        background-color: aqua;
+        display: flex;
+    }
+    footer-section .guitarist-img {
+        min-height: 50vh;
+        width: 50%;
+        background-image: url(images/footer_section/guitarist-image.png);
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: 40%;
+    }
+    .footer-section .footer-link {
+        height: 100px;
+        margin-top: 15%;
+    }
+    .footer-section .footer-link .row .footer-col h4 {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
 }

@@ -327,7 +327,7 @@ header nav .navigation li a .contactUs {
     color: #FFFFFF;
 }
 
-/* Spotlight Section*/
+/* Spotlight Section */
 .spotlight-section {
     min-height: 100vh;
     width: 100%;
@@ -335,6 +335,8 @@ header nav .navigation li a .contactUs {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+/* Spotlight Section Content Section */
 .spotlight-section .content {
     text-align: center;
     position: relative;
@@ -366,6 +368,7 @@ header nav .navigation li a .contactUs {
     margin-top: 55px;
 }
 
+/* Spotlight Section Main Video */
 .spotlight-section .videos-section .main-video video {
     width: 60%;
     display: block;
@@ -373,6 +376,8 @@ header nav .navigation li a .contactUs {
     margin-right: auto;
     border-radius: 15px;
 }
+
+/* Spotlight Section Videos */
 .spotlight-section .videos-section .videos {
     text-align: center;
 }
@@ -416,6 +421,8 @@ header nav .navigation li a .contactUs {
         25%,
         25%;     
 }
+
+/* Testimonal Section Content Section */
 .testimonial-section .content {
     text-align: center;
     position: relative;
@@ -467,10 +474,9 @@ header nav .navigation li a .contactUs {
     margin-bottom: auto;
 }
 
-
 /* Footer Section */
 .footer-section {
-    min-height: 10vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url(images/footer_section/footer_background_image.png);
     background-size: contain;
@@ -480,7 +486,6 @@ header nav .navigation li a .contactUs {
     display: flex;
 }
 .footer-section .guitarist-img {
-    min-height: 100vh;
     width: 50%;
     background-image: url(images/footer_section/guitarist-image.png);
     background-size: 40%;
