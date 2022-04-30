@@ -153,27 +153,31 @@
     /* Footer Section */
     .footer-section {
         min-height: 100vh;
-        height: 50px;
-        width: 100%;
-        background-image: none;
-        background-color: aqua;
+        max-width: 100%;
+        background-image: url(images/footer_section/mobile_footer_background_image.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
         display: flex;
     }
-    footer-section .guitarist-img {
-        min-height: 50vh;
-        width: 50%;
+    .footer-section .guitarist-img {
         background-image: url(images/footer_section/guitarist-image.png);
-        background-size: 40%;
+        background-size: 175px;
         background-repeat: no-repeat;
-        background-position-y: top;
-        background-position-x: 40%;
+        background-position-y: center;
+        background-position-x: 5%;
     }
     .footer-section .footer-link {
-        height: 100px;
-        margin-top: 15%;
+        width: 240px;
+        height: 200px;
+        margin-top: 70px;
     }
     .footer-section .footer-link .row .footer-col h4 {
-        margin-top: 25px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .footer-section .footer-link .row .footer-col ul li:not(:last-child) {
         margin-bottom: 20px;
     }
 }
