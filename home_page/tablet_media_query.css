@@ -137,6 +137,9 @@
         width: 260px;
     }
     /* Footer Section */
+    .footer-section {
+        margin-top: -250px;
+    }
     .footer-section .guitarist-img {
         background-size: 60%;
         background-position-y: 400px;

@@ -154,8 +154,9 @@
     .footer-section {
         min-height: 100vh;
         max-width: 100%;
+        padding-top: 300px;
         background-image: url(images/footer_section/mobile_footer_background_image.png);
-        background-size: contain;
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: bottom;
