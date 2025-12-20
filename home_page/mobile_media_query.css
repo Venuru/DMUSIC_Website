@@ -45,6 +45,7 @@
         min-height: 75vh;
         width: 100%;
         background-color: rgba(180, 180, 180, 0.15);
+        margin-top: -10px;
     }
     /* Piano Lessons Section Content Section */
     .piano-lessons-section .content {
