@@ -10,34 +10,90 @@
 
     /* Music Band Image */
     .music-band {
-        top: 30%;
+        top: clamp(30%, 33vh, 38%);
+        right: 0;
+        left: 0;
         background-image: url("images/home_section/music_band.png");
         background-position: 50%;
-        background-size: 85%;
+        background-size: clamp(75%, 85vw, 85%);
+        width: 100%;
+        margin-top: clamp(5px, 1vh, 10px);
     }
 
     /* Header Section */
     header nav .logo {
-        width: 80px;
+        width: clamp(60px, 16vw, 80px);
+    }
+    header nav .navigation {
+        display: none;
+    }
+    header nav .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-image: url("images/home_section/menu.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+    header nav .toggle.active {
+        background-image: url("images/home_section/close_menu.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: fixed;
+        right: 40px;
+    }
+    header nav .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #3B28E5, #26E1FF);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    header nav .navigation li {
+        display: inline;
+        list-style: none;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    header nav .navigation li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
     }
 
     /* Home Page Content Section */
     .home .content {
         width: 100%;
-        top: 40px;
+        top: clamp(30px, 6vh, 40px);
+        padding: 0 clamp(8px, 2.5vw, 10px);
+        padding-bottom: clamp(15px, 3vh, 25px);
     }
     .home .content .textBox {
-        top: 10px;
-        left: 20px;
+        top: clamp(5px, 1.5vh, 10px);
+        left: clamp(8px, 2.5vw, 10px);
+        max-width: calc(100% - clamp(16px, 5vw, 20px));
+        margin-bottom: clamp(10px, 2vh, 20px);
     }
     .home .content .textBox h3 {
-        font-size: 57px;
+        font-size: clamp(28px, 7.5vw, 57px);
     }
     .home .content .textBox h2 {
-        font-size: 60px;
+        font-size: clamp(32px, 8.5vw, 60px);
     }
     .home .content .textBox p {
-        font-size: 17px;
+        font-size: clamp(13px, 3.5vw, 17px);
+        margin-bottom: 20px;
     }
 
     /* Piano Lessons Section */
@@ -45,7 +101,6 @@
         min-height: 75vh;
         width: 100%;
         background-color: rgba(180, 180, 180, 0.15);
-        margin-top: -10px;
     }
     /* Piano Lessons Section Content Section */
     .piano-lessons-section .content {
@@ -60,6 +115,11 @@
     /* Piano Lessons Section Image Slider */
     .piano-lessons-section .swiper {
         padding-top: 10px;
+        overflow: hidden;
+    }
+    .piano-lessons-section .swiper-slide {
+        width: 280px !important;
+        max-width: 85%;
     }
 
     /* Maestra Section*/
@@ -85,7 +145,8 @@
     }
     /* Maestra Section Teacher Card */
     .maestra-section .teacher-card {
-        width: 360px;
+        width: 90%;
+        max-width: 360px;
     }
 
     /* Lessons Section*/
@@ -98,6 +159,9 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+    .lessons-section .course-box {
+        padding: 0 10px;
+    }
     .lessons-section .content p {
         margin-top: 15px;
         font-size: 16px;
@@ -107,5 +171,126 @@
     /* Lessons Section Courses Section */
     .course-box .course {
         margin-left: 0;
+        width: 90%;
+        max-width: 310px;
+    }
+    .course-box .piano-course {
+        width: 90%;
+        max-width: 340px;
+    }
+
+    /* Testimonial Section */
+    .testimonial-section .testimonal-box .contentBox {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    /* Spotlight Section Video Section */
+    .spotlight-section .videos-section .main-video video {
+        width: 90%;
+        max-width: 60%;
+    }
+    .spotlight-section .videos-section .videos video {
+        width: 90%;
+        max-width: 275px;
+    }
+
+    /* Footer Section */
+    .footer-section .footer-link .row .footer-col {
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .footer-section .footer-link {
+        margin-top: 20%;
+    }
+}
+
+/* Responsive breakpoints for different mobile screen sizes */
+
+/* iPhone SE, iPhone 12/13 mini (375px - 390px) */
+@media screen and (max-width: 390px) and (min-width: 360px) {
+    .home .content .textBox h3 {
+        font-size: clamp(32px, 8vw, 52px);
+    }
+    .home .content .textBox h2 {
+        font-size: clamp(36px, 9vw, 56px);
+    }
+    .home .content .textBox p {
+        font-size: clamp(14px, 3.5vw, 16px);
+    }
+    
+    .home .content {
+        padding-bottom: clamp(12px, 2.5vh, 22px);
+    }
+    
+    .home .content .textBox {
+        margin-bottom: clamp(10px, 2vh, 18px);
+    }
+    
+    .music-band {
+        top: clamp(29%, 32vh, 36%);
+        margin-top: clamp(5px, 1vh, 10px);
+    }
+}
+
+/* Small phones (320px - 359px) - Galaxy Z Fold, older iPhones */
+@media screen and (max-width: 359px) {
+    .home .content .textBox h3 {
+        font-size: clamp(26px, 6.5vw, 45px);
+    }
+    .home .content .textBox h2 {
+        font-size: clamp(30px, 7.5vw, 50px);
+    }
+    .home .content .textBox p {
+        font-size: clamp(12px, 3vw, 15px);
+    }
+    
+    .home .content {
+        top: clamp(20px, 4vh, 30px);
+        padding: 0 8px;
+        padding-bottom: clamp(10px, 2vh, 20px);
+    }
+    
+    .home .content .textBox {
+        left: 8px;
+        max-width: calc(100% - 16px);
+        margin-bottom: clamp(8px, 1.5vh, 15px);
+    }
+    
+    .music-band {
+        top: clamp(28%, 31vh, 35%);
+        background-size: clamp(70%, 80vw, 82%);
+        margin-top: clamp(3px, 0.5vh, 8px);
+    }
+    
+    header nav .logo {
+        width: clamp(55px, 14vw, 75px);
+    }
+}
+
+/* Medium phones (400px - 480px) */
+@media screen and (min-width: 400px) and (max-width: 480px) {
+    .home .content .textBox h3 {
+        font-size: clamp(40px, 9vw, 57px);
+    }
+    .home .content .textBox h2 {
+        font-size: clamp(44px, 10vw, 60px);
+    }
+    .home .content .textBox p {
+        font-size: clamp(15px, 3.8vw, 17px);
+    }
+}
+
+/* Large phones (481px - 600px) */
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .home .content .textBox h3 {
+        font-size: clamp(48px, 10vw, 57px);
+    }
+    .home .content .textBox h2 {
+        font-size: clamp(52px, 11vw, 60px);
+    }
+    .home .content .textBox p {
+        font-size: clamp(16px, 4vw, 17px);
     }
 }

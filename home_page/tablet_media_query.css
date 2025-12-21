@@ -1,34 +1,47 @@
-/* On screens that are 992px or less */
-@media screen and (max-width: 992px) {
+/* On screens that are between 601px and 1200px (tablet and small desktop) */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
     
     /* Home Section */
     .home {
-        min-height: 75vh;
-        background-size: 82%;
-        background-image: url("images/home_section/tablet_background_image.png");
+        min-height: 75vh !important;
+        max-height: 100vh !important;
+        height: auto !important;
+        background-size: 82% !important;
+        background-image: url("images/home_section/tablet_background_image.png") !important;
+        background-position: 100% 0% !important;
+        background-repeat: no-repeat !important;
+        background-clip: padding-box !important;
+        padding-bottom: clamp(60px, 8vh, 100px) !important;
+        margin-bottom: 0 !important;
+        overflow: hidden !important;
     }
     /* Music Band Image */
     .music-band {
-        top: -5%;
-        right: 2%;
-        background-size: 50%;
+        top: clamp(-5%, 5vh, 10%) !important;
+        right: clamp(0%, 2vw, 5%) !important;
+        background-size: clamp(40%, 50vw, 55%) !important;
+        max-height: 70vh !important;
+        background-position: 100% !important;
     }
     /* Home Page Content Section */
     .home .content {
-        width: 60%;
-        top: 75px;
+        width: 60% !important;
+        top: 75px !important;
+        padding-bottom: clamp(40px, 5vh, 60px) !important;
+        margin-bottom: clamp(20px, 2.5vh, 30px) !important;
     }
     .home .content .textBox {
-        left: 20px;
+        left: 20px !important;
+        max-width: 100% !important;
     }
     .home .content .textBox h3 {
-        font-size: 50px;
+        font-size: 50px !important;
     }
     .home .content .textBox h2 {
-        font-size: 60px;
+        font-size: 60px !important;
     }
     .home .content .textBox p {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     /* Header Section */
     header nav .navigation {
@@ -80,7 +93,8 @@
 
     /* Piano Lessons Section */
     .piano-lessons-section {
-        margin-top: -200px;
+        margin-top: -200px !important;
+        padding-top: 20px !important;
     }
 
     .lessons-section {
