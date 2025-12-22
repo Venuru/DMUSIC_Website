@@ -10,9 +10,9 @@
         background-image: url("images/home_section/tablet_background_image.png") !important;
         background-position: 100% 0% !important;
         background-repeat: no-repeat !important;
-        background-clip: padding-box !important;
+        background-clip: border-box !important;
         padding-bottom: clamp(60px, 8vh, 100px) !important;
-        margin-bottom: 0 !important;
+        margin-bottom: clamp(80px, 8vh, 120px) !important;
         overflow: hidden !important;
     }
     /* Music Band Image */
@@ -93,8 +93,10 @@
 
     /* Piano Lessons Section */
     .piano-lessons-section {
-        margin-top: -200px !important;
-        padding-top: 20px !important;
+        margin-top: 0 !important;
+        padding-top: clamp(40px, 4vh, 60px) !important;
+        position: relative !important;
+        z-index: 2 !important;
     }
 
     .lessons-section {
@@ -168,6 +170,26 @@
     .footer-section .footer-link {
         height: 200px;
         margin-top: 65%;
+    }
+}
+
+/* PC background image for larger tablets/small desktops - 900px to 1200px */
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .home {
+        background-image: url("images/home_section/pc_background_image.png") !important;
+        background-size: 60% !important;
+        background-position: 100% 0% !important;
+        background-clip: border-box !important;
+        overflow: hidden !important;
+        margin-bottom: clamp(100px, 10vh, 150px) !important;
+        padding-bottom: clamp(200px, 25vh, 280px) !important;
+    }
+    
+    .piano-lessons-section {
+        margin-top: 0 !important;
+        padding-top: clamp(60px, 6vh, 80px) !important;
+        position: relative !important;
+        z-index: 2 !important;
     }
 }
   
